@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massi</title>
+    <style>
+        *{
+            margin: 0;
+        
+        }
+        body{
+            background-color: #F5F5F5;;
+        }
+        .menu-bar{
+            display: flex;
+            margin-top: 15px;
+            color: #BA0001;
+            border-bottom: 2px solid #BA0001;
+            height: 40px;
+        }
+        .insta-img{
+            width: 15px;
+            height: 15px;
+        }
+        .face-img{
+            width: 20px;
+            height: 20px;
+        }
+        .twit-img{
+            width: 20px;
+            height: 20px;
+        }
+        .youtube-img{
+            width: 28px;
+            height: 28px;
+        }
+        .youtube{
+            position: absolute;
+            right: 80px;
+            
+        }
+        .twit{
+            position: absolute;
+            right: 110px;
+            padding-top: 5px;
+            
+
+        }
+        .face{
+            position: absolute;
+            right: 140px;
+            padding-top: 5px;
+            
+        }
+        .insta{
+            position: absolute;
+            right: 170px;
+            padding-top: 7px;
+            
+        }
+        .phone{
+            position: absolute;
+            left: 50px;
+        }
+        .email{
+            position: absolute;
+            left: 200px;
+        }
+        .logo{
+            width: 200px;
+            height: 100px;
+        }
+        .main-bar{
+            padding-top: 40px;
+            padding-left: 30px;
+            display: flex;
+        }
+        .a{
+            padding-top: 38px;
+            
+        }
+        .home{
+            position: absolute;
+            left: 250px;
+        }
+        .package{
+            position: absolute;
+            left: 300px;
+        }
+        .featured{
+            position: absolute;
+            left: 370px;
+        }
+        .event{
+            position: absolute;
+            left: 440px;
+        }
+        .contact{
+            position: absolute;
+            left: 500px;
+        }
+        .about{
+            position: absolute;
+            left: 570px;
+        }
+        .main{
+            color: #BA0001;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .register{
+            position: absolute;
+            right: 80px;
+            top: 125px;
+            width: 100px;
+            height: 35px;
+            border-radius: 20px;
+            background-color:#BA0001 ;
+            color: white;
+            border: none;
+
+        }
+        .login{
+            position: absolute;
+            right: 200px;
+            top: 125px;
+            width: 100px;
+            height: 35px;
+            border-radius: 20px;
+            background-color: wheat;
+            color: #BA0001;
+            border: none;
+
+        }
+        .register:hover{
+            width: 110px;
+            height: 38px;
+            background-color: wheat;
+            color: #BA0001;
+
+        }
+        .login:hover{
+            width: 110px;
+            height: 38px;
+            background-color: #BA0001;
+            color: white;
+
+        }
+        .massipics{
+            width: 100%;
+            height: 450px;
+            box-shadow: #ff0404;
+            /* border: 2px solid #f01f1f; */
+                   
+        }
+        .mainpics{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            
+            
+            
+            
+        }
+        .th{
+            padding-top: 20px;
+            font-size: large;
+            color: #ebe0e0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .td{
+            padding-top: 5px;
+            padding-bottom: 20px;
+            
+        }
+        select{
+            width: 180px;
+            height: 30px;
+        }
+        .search-button{
+            width: 120px;
+            height: 35px;
+            color: #BA0001;
+            border: none;
+        }
+        .featured-head{
+            text-align: center;
+            padding-top: 15px;
+        }
+        .f-profile{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 40px;
+        }
+        .profile{
+            height: 380px;
+            width: 250px;
+            background-color: rgb(59, 59, 59);
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            font-weight: normal;
+            border-radius: 25px;
+        }
+        .f-data{
+            width: 80%;
+            margin-left: 40px;
+            /* margin-right: 20px; */
+        }
+        .footer-table{
+            margin-left: 200px;
+            margin-right: 200px;
+            width: 60%;
+            color: #e2dede;
+            padding-top: 80px;
+            padding-bottom: 100px;
+        }
+        .footer{
+            background-color: rgb(59, 59, 59);
+        }
+        .footor_tr th{
+            margin-bottom: 100px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: normal;
+        }
+        .tr-th{
+            font-size: larger;
+            font-weight: bolder;
+        }
+        
+ 
+      
+  
+ 
+ 
+            
+ 
+
+        
+ 
+        
+
+        
+ 
+ 
+        
+     
+    </style>
+    <script>
+        function login(){
+            window.open("log.html")}
+        function register(){
+            window.open("profile.html")
+        }    
+        
+    </script>
+</head>
+<body>
+    <div class="menu-bar">
+        <section class="phone">| ☎ +92 3304069986 |</section>
+        <section class="email">| 📨 junaidkalmati00@gmail.com |</section>
+        <section class="insta"><a href=""><img src="174855.png" alt="" class="insta-img"></a></section>
+        <section class="face"><a href=""><img src="Facebook-logo.png" alt="" class="face-img"></a></section>
+        <section class="twit"><a href=""><img src="twitter-logo-vector-png-clipart-1.png" alt="" class="twit-img"></a></section>
+        <section class="youtube"><a href=""><img src="youtube-logo-hd-8.png" alt="" class="youtube-img"></a></section>
+    </div>
+    <div class="main-bar">
+        <section class=""><a href=""><img src="My project.png" alt="" class="logo"></a></section>
+        <section class="a home"><a href="" class="main">Home</a></section>
+        <section class="a package"><a href="" class="main">Packages</a></section>
+        <section class="a featured"><a href="" class="main">Featured</a></section>
+        <section class="a event"><a href="" class="main">Events</a></section>
+        <section class="a contact"><a href="" class="main">Contact</a></section>
+        <section class="a about"><a href="" class="main">About</a></section>
+        <button type="submit" class="login" onclick="login()">Login</button>
+        <button type="submit" class="register" onclick="register()">Register</button>
+    </div>
+     <div class="mainpics">
+        <img src="light city.jpg" alt="" class="massipics">
+        <table style="background-color: #f01f1f;">
+            <tr>
+                <th class="th">Gender</th>
+                <th class="th">Age From</th>
+                <th class="th">Age To</th>
+                <th class="th">Price</th>
+            </tr>
+            <tr>
+              <td class="td">
+                <form action="">
+                    <select name="gender" id="gender">
+                        <option value="">Choose</option>
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                        <option value="">Other</option>
+                    </select>
+                </form>
+              </td>
+              <td class="td">
+                <select name="agefrom" id="agefrom">
+                    <option value="">Choose</option>
+                    <option value="">20</option>
+                    <option value="">25</option>
+                    <option value="">35</option>
+                    <option value="">40</option>
+                    <option value="">45</option>
+                </select>
+              </td>
+              <td class="td">
+                <select name="ageto" id="ageto">
+                    <option value="">Choose</option>
+                    <option value="">35</option>
+                    <option value="">45</option>
+                    <option value="">55</option>
+                    <option value="">60</option>
+                    <option value="">65</option>
+                </select>
+              </td>
+              <td class="td">
+                <select name="agefrom" id="agefrom">
+                    <option value="">Choose</option>
+                    <option value="">20k</option>
+                    <option value="">25k</option>
+                    <option value="">35k</option>
+                    <option value="">40k</option>
+                    <option value="">45k</option>
+                </select>
+              </td>
+              <td><form action="junaid.html" id="jun1"><button type="submit" formaction="jun.html" class="search-button">Search</button></form></td>
+            </tr>
+        </table>
+    
+    </div>
+
+    <!-- <form action="jun.html" id="form1">
+        <input type="text" name="" id="">
+        <button type="submit">jun</button>
+        <button type="submit" formaction="ffh.html" >kjdssa</button>
+     
+
+    </form>
+    <button type="submit" form="form1">jun</button> -->
+    <div>
+        <h1 class="featured-head">Featured Profile</h1>
+    </div>
+    <div class="f-profile">
+        <section class="profile">
+            <img src="live-out-maid-abu-dhabi-745x400-1.jpg" alt="" width="250px" height="200px">
+            <b><table class="f-data">
+                <br><br>
+                <tr>
+                    <td>Name:</td>
+                    <td>Mike</td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>Location:</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td>Salary:</td>
+                    <td>50k</td>
+                </tr>
+            </table></b>
+        </section>
+        <section class="profile">
+            <img src="house-cleaners.jpg" alt="" width="250px" height="200px">
+            <b><table class="f-data">
+                <br><br>
+                <tr>
+                    <td>Name:</td>
+                    <td>Mena</td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>Location:</td>
+                    <td>Canada</td>
+                </tr>
+                <tr>
+                    <td>Salary:</td>
+                    <td>35k</td>
+                </tr>
+            </table></b>
+        </section>
+        <section class="profile">
+            <img src="depositphotos_129785588-stock-photo-woman-cleaning-her-house.jpg" alt="" width="250px" height="200px">
+            <b><table class="f-data">
+                <br><br>
+                <tr>
+                    <td>Name:</td>
+                    <td>Watson</td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td>37</td>
+                </tr>
+                <tr>
+                    <td>Location:</td>
+                    <td>Australia</td>
+                </tr>
+                <tr>
+                    <td>Salary:</td>
+                    <td>65k</td>
+                </tr>
+            </table></b>
+        </section>
+    </div><br><br><br><br><br><br><br><br><br>
+    <div class="footer">
+        <table class="footer-table">
+            <tr>
+                <th class="tr-th">Home</th>
+                <th class="tr-th">Packages</th>
+                <th class="tr-th">Events</th>
+                <th class="tr-th">About</th>
+                <th class="tr-th">Help</th>
+            </tr>
+            <tr class="footor_tr">
+                <th>Team</th>
+                <th>Services</th>
+                <th>Workers</th>
+                <th>Member</th>
+                <th>FAQ</th>
+            </tr>
+            <tr class="footor_tr">
+                <th>Managers</th>
+                <th>Sweepers</th>
+                <th>Jobs</th>
+                <th>Queries</th>
+                <th></th>
+            </tr>
+            <tr class="footor_tr">
+                <th>Average</th>
+                <th>Experienced</th>
+                <th>Bonus</th>
+                <th>MBA</th>
+                <th></th>
+            </tr>
+            <tr class="footor_tr">
+                <th>Q/A</th>
+                <th>Security</th>
+                <th>Morning</th>
+                <th></th>
+                <th></th>
+            </tr> 
+        
+            
+        </table>
+    </div>
+ 
+ 
+</body>
+</html>
